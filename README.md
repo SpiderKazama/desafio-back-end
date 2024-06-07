@@ -1,30 +1,54 @@
-# Projeto de Gerenciamento de Clientes e Ordens de Serviço
+# Gerenciamento de Clientes e Ordens de Serviço
 
-Este projeto tem como objetivo fornecer uma plataforma para o gerenciamento de clientes e ordens de serviço. Ele permite que os usuários realizem operações básicas de CRUD (Create, Read, Update, Delete) tanto para clientes quanto para ordens de serviço.
+## Descrição do Projeto
+Este projeto é uma aplicação web para gerenciar clientes e suas ordens de serviço. Ele permite adicionar, visualizar, atualizar e excluir clientes e ordens de serviço.
 
-# Funcionalidades
-- Adicionar, visualizar, atualizar e excluir clientes.
-- Adicionar, visualizar, atualizar e excluir ordens de serviço.
-- Associar clientes a ordens de serviço.
-- Visualizar detalhes de clientes e ordens de serviço.
-# Tecnologias Utilizadas
-- Next.js: Framework React para o desenvolvimento de aplicações web.
-- Firebase: Plataforma de desenvolvimento de aplicativos móveis e da web do Google.
-- Tailwind CSS: Framework CSS para criar interfaces de usuário customizáveis.
-# Como Utilizar
-- Clone este repositório para sua máquina local.
-- Instale as dependências do projeto utilizando o comando
-```
-  npm install
-```
-- Configure o Firebase para o armazenamento de dados.
-- Execute o projeto localmente utilizando o comando
-```
-  npm run dev
-  ```
-- Acesse a aplicação em seu navegador através do endereço: http://localhost:3000
-# Contribuição
-Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request com melhorias, correções de bugs ou novas funcionalidades.
+## Tecnologias Utilizadas
+- Next.js
+- Firebase (Firestore)
 
-# Licença
-Este projeto está licenciado sob a Licença MIT.
+## Instalação
+
+### Pré-requisitos
+- Node.js instalado na máquina
+
+### Passos para Instalação
+
+1. Clone o repositório:
+    ```bash
+    git clone <URL_DO_REPOSITORIO>
+    cd <NOME_DO_REPOSITORIO>
+    ```
+
+2. Instale as dependências:
+    ```bash
+    npm install
+    ```
+
+3. Configure as variáveis de ambiente:
+    - Crie um arquivo `.env.local` na raiz do projeto e adicione as configurações do Firebase.
+
+4. Inicie o servidor de desenvolvimento:
+    ```bash
+    npm run dev
+    ```
+
+## Como Usar
+
+### Funcionalidades
+- **Adicionar Clientes:** Permite inserir novos clientes no sistema.
+- **Atualizar Clientes:** Permite modificar as informações dos clientes.
+- **Visualizar Clientes:** Exibe uma lista de todos os clientes cadastrados.
+- **Excluir Clientes:** Remove clientes do sistema.
+
+### Acessando a Aplicação
+- Acesse `http://localhost:3000/clients` para gerenciar clientes.
+- Acesse `http://localhost:3000/orders` para gerenciar ordens de serviço.
+
+## Licença
+Este projeto está licenciado sob a MIT License.
+
+## Autor
+- **Nome:** Lindon Jhonson Gomes Assunção
+- **Matrícula:** 01626960
+- **Email:** spider.kazama@gmail.com

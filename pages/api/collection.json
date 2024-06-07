@@ -1,0 +1,70 @@
+{
+  "info": {
+    "_firebase_id": "01626960",
+    "name": "API de Gerenciamento de Clientes e Ordens de Serviço",
+    "description": "Coleção de requisições para interagir com a API de gerenciamento de clientes e ordens de serviço no Firebase Realtime Database.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Clientes",
+      "item": [
+        {
+          "name": "Listar Clientes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": {
+              "raw": "https://seu-projeto.firebaseio.com/clients.json"
+            }
+          }
+        },
+        {
+          "name": "Adicionar Cliente",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\": \"Nome do Cliente\", \"email\": \"cliente@email.com\", \"phone\": \"(00) 12345-6789\", \"address\": \"Endereço do Cliente\"}"
+            },
+            "url": {
+              "raw": "https://console.firebase.google.com/u/0/project/desafio-back-end-6ac44/clients.json"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ordens de Serviço",
+      "item": [
+        {
+          "name": "Listar Ordens de Serviço",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": {
+              "raw": "https://console.firebase.google.com/u/0/project/desafio-back-end-6ac44/orders.json"
+            }
+          }
+        },
+        {
+          "name": "Adicionar Ordem de Serviço",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"clientId\": \"{{clientId}}\", \"date\": \"2024-06-21\", \"description\": \"Descrição da Ordem de Serviço\", \"estimatedCost\": 100.00, \"observations\": \"Observações adicionais\"}"
+            },
+            "url": {
+              "raw": "https://console.firebase.google.com/u/0/project/desafio-back-end-6ac44/orders.json"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

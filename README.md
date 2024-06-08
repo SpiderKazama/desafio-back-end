@@ -28,3 +28,6 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou env
 
 # Licença
 Este projeto está licenciado sob a Licença MIT.
+
+![Captura de tela 2024-06-07 222909](https://github.com/SpiderKazama/desafio-back-end/assets/171955605/cae6f71c-3dc5-40ef-a08a-17939fdde2e7)
+![Captura de tela 2024-06-07 222925](https://github.com/SpiderKazama/desafio-back-end/assets/171955605/2c4d1720-2768-4f1c-938c-8d1081992052)

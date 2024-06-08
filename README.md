@@ -10,6 +10,7 @@ Este projeto tem como objetivo fornecer uma plataforma para o gerenciamento de c
 - Next.js: Framework React para o desenvolvimento de aplicações web.
 - Firebase: Plataforma de desenvolvimento de aplicativos móveis e da web do Google.
 - Tailwind CSS: Framework CSS para criar interfaces de usuário customizáveis.
+- Axios
 # Como Utilizar
 - Clone este repositório para sua máquina local.
 - Instale as dependências do projeto utilizando o comando

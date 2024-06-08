@@ -11,7 +11,7 @@
 
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import styles from '../styles/Clients.module.css';
+import styles from '../styles/Clientes.module.css';
 
 export default function Clients() {
   const [clientes, setClientes] = useState([]);
@@ -23,7 +23,7 @@ export default function Clients() {
 
   useEffect(() => {
     const fetchClients = async () => {
-      const response = await axios.get('/api/clients');
+      const response = await axios.get('/api/clientes');
       setClientes(response.data ? Object.keys(response.data).map(id => ({ id, ...response.data[id] })) : []);
     };
 
@@ -35,10 +35,10 @@ export default function Clients() {
     const newClient = { nome, endereco, telefone, email };
 
     if (editId) {
-      await axios.put('/api/clients', { id: editId, ...newClient });
+      await axios.put('/api/clientes', { id: editId, ...newClient });
       setEditId(null);
     } else {
-      await axios.post('/api/clients', newClient);
+      await axios.post('/api/clientes', newClient);
     }
 
     setNome('');
@@ -46,7 +46,7 @@ export default function Clients() {
     setTelefone('');
     setEmail('');
 
-    const response = await axios.get('/api/clients');
+    const response = await axios.get('/api/clientes');
     setClientes(response.data ? Object.keys(response.data).map(id => ({ id, ...response.data[id] })) : []);
   };
 
@@ -61,7 +61,7 @@ export default function Clients() {
   const handleDelete = async (id) => {
     await axios.delete('/api/clients', { data: { clientId: id } });
 
-    const response = await axios.get('/api/clients');
+    const response = await axios.get('/api/clientes');
     setClientes(response.data ? Object.keys(response.data).map(id => ({ id, ...response.data[id] })) : []);
   };
 

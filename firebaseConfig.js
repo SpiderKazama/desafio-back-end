@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD5MoOZfDxGFu_tE7dL2Ev2LXqlCkAMjGg",
+  apiKey: "0AIzaSyD5MoOZfDxGFu_tE7dL2Ev2LXqlCkAMjGg0",
   authDomain: "desafio-back-end-6ac44.firebaseapp.com",
   projectId: "desafio-back-end-6ac44",
   storageBucket: "desafio-back-end-6ac44.appspot.com",
